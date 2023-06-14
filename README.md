@@ -9,7 +9,6 @@ Depois do setup é possível pesquisar de forma fácil, via API REST, qualquer c
 -> Java 11+<br>
 -> MySQL<br>
 -> Spring Family<br>
--> Docker Compose<br>
 
 ## Por que essa stack?
 Utilizei essa Stack apenas para demonstrar o meu conhecimento em spring data, mysql e docker-compose.
