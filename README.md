@@ -1,9 +1,5 @@
 # zipcode-api
-API de fácil instalação para buscar qualquer cep Brasileiro :)<br>
-
-## Conceito
-Basicamente, ao subir o container, ela baixa esse [csv](https://github.com/miltonhit/miltonhit/raw/main/public-assets/cep-20190602.csv) com 900k de endereços e salva na tabela 'correio.address' dentro do MySQL.<br>
-Depois do setup é possível pesquisar de forma fácil, via API REST, qualquer cep Brasileiro.
+API para buscar qualquer cep Brasileiro :)<br>
 
 ## Stack
 -> Java 11+<br>
@@ -11,18 +7,8 @@ Depois do setup é possível pesquisar de forma fácil, via API REST, qualquer c
 -> Spring Family<br>
 
 ## Por que essa stack?
-Utilizei essa Stack apenas para demonstrar o meu conhecimento em spring data, mysql e docker-compose.
+Utilizei essa Stack apenas para demonstrar o meu conhecimento em spring data, mysql.
 Uma stack com Lambda e DynamoDB cairia muito bem também :)
-
-## Cobertura de testes
-100% coberto por testes de integrações, utilizando:<br>
--> org.mock-server<br>
--> com.h2database
-
-## Para compilar e testar
-Execute no terminal: docker-compose up<br><br>
-**Importante:** Ao buildar e subir a API, ela pode demora de 3 a 5 minutos para baixar todos os CEPs e inserir no MySQL.<br>
-Enquanto esse **setup** não termina, você vai receber o erro *503*, conforme exemplo abaixo.
 
 ## Exemplos para testar
 ###### curl http://localhost:6868/zip/03358150
